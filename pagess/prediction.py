@@ -9,10 +9,10 @@ def app():
 
     columns = st.columns(2)
 
-    first_name = columns[0].text_input("Patient First Name: ", '')
+    first_name = columns[0].text_input("First Name: ", '')
     columns[0].write(first_name)
 
-    last_name = columns[1].text_input("Patient Last Name: ", '')
+    last_name = columns[1].text_input("Last Name: ", '')
     columns[1].write(last_name)
 
     dob = st.date_input("DOB: ")
@@ -20,7 +20,7 @@ def app():
     report_date = st.date_input("Report Date: ")
 
 
-    uploaded_file = st.file_uploader("Upload MRI File", type=["jpg", "jpeg", "png"], )
+    uploaded_file = st.file_uploader("Upload MRI scan", type=["jpg", "jpeg", "png"], )
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded Image.', use_column_width=False, width=300 )

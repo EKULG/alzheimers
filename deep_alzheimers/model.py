@@ -1,6 +1,6 @@
 from tensorflow.keras import Sequential, layers
 from tensorflow.keras.applications.densenet import DenseNet121
-from alzheimers_final_project.params import INPUT_SHAPE, METRICS, OPTIMIZER
+from deep_alzheimers.params import INPUT_SHAPE, METRICS, OPTIMIZER
 
 def build_compile_model():
 

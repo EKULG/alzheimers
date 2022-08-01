@@ -3,9 +3,9 @@ import os
 import pickle
 import sys
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
-from alzheimers_final_project.data import train_data_loading, test_data_loading
-from alzheimers_final_project.model import build_compile_model
-from alzheimers_final_project.preprocess import preprocessing, augment
+from deep_alzheimers.data import train_data_loading, test_data_loading
+from deep_alzheimers.model import build_compile_model
+from deep_alzheimers.preprocess import preprocessing, augment
 
 sys.setrecursionlimit(10000)
 

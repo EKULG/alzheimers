@@ -1,6 +1,6 @@
 # Import dependencies
 from tensorflow.keras.preprocessing import image_dataset_from_directory
-from alzheimers_final_project.params import BATCH_SIZE, IMAGE_SIZE
+from deep_alzheimers.params import BATCH_SIZE, IMAGE_SIZE
 
 
 # Insert your local path to train data and test data here:
